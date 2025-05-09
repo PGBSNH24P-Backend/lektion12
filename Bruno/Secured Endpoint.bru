@@ -1,0 +1,22 @@
+meta {
+  name: Secured Endpoint
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:5266/test/first
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: CfDJ8BxjkwgLXEdJmIeWT1xPuC_pRoQf2YoMyRmOZFAldrcPYO_GxnOYT8EMlaK7CrNaeeamJJW73ziEzCtaTEN3pvVYPF1E-C-rsjv4luu9Ya6FSJc4zZmClHfbSLsrsK0p8XzembVEyCmb_lvsVkaROZDxeEa1DEAU8eRpS8nayFASoeeJzJtbSm4S0bbwvruh2fbV41xSQE0wKS39YaHxpBBdfVbUJidEKkh5J5XLqAmXnLm6EfxcSU2Gg-QykUZl__xKhUTZ5GAbVehXquQ-cStiHV5ZrgG59P1u3BeBVd3stLdV82Yz3I1-Zg5cY69CvBVteFDe20MupaMf76so7gLpFbtkSG6U8w2LJNxMiU_xScscLX5UOHhXVK3dFNO1kMqyi-c9EeKxmvaipBaaQ8F9-EqvKguNY_6IbkgmY1jYTq09HWDyDf-Vyw8HeQJPpq7DQWY3h-AkWEw3iUEjAuIBAh8fCtYw9rz36Y_R1raPOpd43MeSTyrEJPPJIjU2oHWFpbjXhXnaF4lkITKn6AnWNdA_BFVujR-DLwLYcJ82BKY2krJ1iMKDWSVRIRKJgZzZiRAaEyCJ3KVl5o4rmI_x5cV-AIoKff_nNgyQF-RrxZTW-E_8tMansgWhZdBgmN5Uel79A8WBIaXG3XaPQoALI5bfuJmm7glLMD7RaduvJ5TnDC9gr7uRNaiDgbFNqed6roKjesA17KgPwiv5UW0
+}
+
+body:json {
+  {
+    "email": "ironman@avengers.se",
+    "password": "TestPassword123!"
+  }
+}
